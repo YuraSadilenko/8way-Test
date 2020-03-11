@@ -1,0 +1,50 @@
+.btn {
+  position: relative;
+  display: inline-block;
+  margin: auto;
+  padding: 20px 50px;
+  border: 1px solid #000;
+  font-family: Avenir Next;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: all .5s;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 1px;
+    background-color: #fff;
+  }
+
+  &::after {
+    top: -1px;
+    right: 0;
+    transform: translateX(-20%);
+    transition: all .5s;
+
+  }
+
+  &::before {
+    bottom: -1px;
+    left: 0;
+    transform: translateX(20%);
+    transition: all .5s;
+
+  }
+
+  &:hover::after {
+    transform: translateX(-50%);
+    width: 50%;
+
+  }
+  &:hover::before {
+    transform: translateX(50%);
+    width: 50%;
+
+  }
+}

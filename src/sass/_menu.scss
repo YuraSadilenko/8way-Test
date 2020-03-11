@@ -1,0 +1,163 @@
+.menu {
+  position: fixed;
+  display: none;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  overflow: hidden;
+
+  &__block-links {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    z-index: 2;
+  }
+
+  &__list {
+    list-style: none;
+
+    &-item {
+      display: flex;
+      margin: auto;
+      margin-bottom: 10px;
+      overflow: hidden;
+      transition: all .3s;
+
+      &:hover a,
+      &:hover span {
+        font-weight: 700;
+      }
+
+      & a {
+        transform: translateY(100%);
+      }
+    }
+
+    &-index {
+      font-family: Avenir Next;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 16px;
+      transform: translateY(100%);
+      margin-right: 10px;
+    }
+
+    &-general {
+      font-family: Avenir Next;
+      font-weight: 500;
+      font-size: 72px;
+      line-height: 80px;
+      letter-spacing: -0.04em;
+      text-transform: capitalize;
+    }
+
+    &-blocks {
+      font-family: Avenir Next;
+      font-size: 24px;
+      line-height: 40px;
+      letter-spacing: -0.04em;
+      text-transform: capitalize;
+    }
+
+    &-languages {
+      font-family: Avenir Next;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &-languages .menu__list-item {
+      margin-bottom: 10px;
+    }
+  }
+
+
+  &__main {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    height: 100vh;
+    right: 0;
+    background-color: #fff;
+  }
+
+
+  &__sub {
+    position: absolute;
+    width: 30%;
+    height: 100vh;
+    left: 0;
+    background: url(../img/yoga-mountains.jpg) no-repeat;
+    background-size: cover;
+    background-position: 36% 0;
+    transform: translateX(10%) scale(1.8);
+    opacity: 0;
+    z-index: -1;
+
+    &--logo {
+      display: flex;
+      justify-content: flex-start;
+      padding-left: 10%;
+      width: 100%;
+
+      & img {
+        width: 150px;
+        text-align: center;
+        padding-top: 50px;
+      }
+    }
+  }
+
+  &__block-contacts {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    z-index: 2;
+  }
+
+  &__address {
+    display: flex;
+    justify-content: space-between;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__phone {
+    margin-right: 50px;
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+
+    & img:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  &__bg {
+
+    z-index: 1;
+
+    &-text {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      font-family: AvenirNext-Bold;
+      font-weight: 900;
+      font-size: 288px;
+      line-height: 272px;
+      letter-spacing: -0.05em;
+      color: rgba(0,0,0, .05);
+      transform: translateX(-20%);
+    }
+  }
+}

@@ -1,0 +1,215 @@
+.menu__wrap {
+  transform: rotate(-90deg);
+  width: fit-content;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@media (max-width: 1025px) {
+  .menu__bg-text {
+    font-size: 150px;
+    line-height: 135px;
+  }
+}
+
+
+@media (max-width: 769px) {
+  .navigation__part:nth-child(3) {
+    display: none;
+  }
+}
+
+@media (max-width: 426px) {
+  .navigation__features-item {
+    margin-right: 10px;
+  }
+
+  .header {
+    padding: 200px 0;
+  }
+
+  .header__main {
+    flex-direction: column;
+  }
+
+  .header__main-item {
+    text-align: center;
+  }
+
+  .main-item__lower {
+    justify-content: center;
+  }
+
+  .header__main-item {
+    margin-bottom: 20px;
+  }
+  
+  .main-item__upper {
+    margin-bottom: 10px;
+  }
+
+  .row {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .col-md-7,
+  .col-md-5 {
+    max-width: 100%;
+  }
+  
+  .col-md-5 {
+    margin-bottom: 30px;
+  }
+
+  .voyager {
+    padding: 30px 0;
+  }
+
+  .btn::before, 
+  .btn::after {
+    height: 3px;
+  }
+
+  .btn::after {
+    top: -2px;
+  }
+
+  .btn::before {
+    bottom: -2px;
+  }
+
+  .voyager__content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .voyager__title h2 {
+    margin-bottom: 20px;
+  }
+
+  .menu__main {
+    width: 100%;
+  }
+
+  .menu__block-links {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu__sub {
+    display: none;
+    width: 0;
+  }
+
+  .menu__list {
+    width: 100%;
+
+    & a {
+      text-align: center;
+    }
+  }
+
+  .menu__list-general .menu__list-item,
+  .menu__list-blocks .menu__list-item {
+    width: 100%;
+    font-size: 40px;
+    margin-bottom: 0;
+    line-height: 1.2;
+  }
+
+  .menu__list-general .menu__list-item,
+  .menu__list-blocks .menu__list-item,
+  .menu__list-languages .menu__list-item {
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu__list-general li span,
+  .menu__list-blocks li span {
+    display: none;
+  }
+
+  .menu__list-blocks {
+    margin-bottom: 20px;
+  }
+
+  .menu__block-contacts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu__address {
+    margin-bottom: 20px;
+  }
+
+}
+
+@media(max-width: 376px) {
+  .navigation {
+    padding: 25px 5px 0 5px;
+  }
+
+  .navigation__logo img {
+    width: 135px;
+  }
+
+  .navigation__features {
+    margin-right: 15px;
+  }
+
+  .slider {
+    width: 2500px;
+  }
+
+  .voyager__descr {
+    flex-direction: column;
+  }
+}
+
+@media(max-width: 320px) {
+  .menu-btn {
+    right: 45px;
+    top: 45px;
+  }
+
+  .navigation {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 5px 15px 40px;
+  }
+
+  .menu__list-general .menu__list-item, 
+  .menu__list-blocks .menu__list-item {
+    width: 100%;
+    font-size: 29px;
+    margin-bottom: 0;
+    line-height: 1.2;
+  }
+
+  .menu__address {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .menu__list-blocks {
+    margin-bottom: 10px; 
+  }
+
+  .menu__phone {
+    margin: 0;
+  }
+
+  .menu__address {
+    flex-direction: column;
+  }
+
+}
+
+

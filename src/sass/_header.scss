@@ -1,0 +1,81 @@
+
+
+.header {
+  padding: 380px 0;
+  background: url(../img/yoga-sunset-group.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  &__main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+    &-item {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+      text-align: left;
+      cursor: pointer;
+      @extend .a-decor-none;
+
+      &:hover .arrow {
+        transform: translateX(20px);
+      }
+
+      &:hover .main-item__descr {
+        transform: translateX(10px);
+      }
+
+      &:hover .arrow span::after,
+      &:hover .arrow span::before {
+        width: 0;
+      }
+    }
+  }
+}
+
+.main-item {
+
+  &__upper {
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  &__lower {
+    display: flex;  
+    align-items: center;
+    width: 100%;
+    padding-left: 15px;
+
+    & span {
+      font-family: Roboto, Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 16px;
+    }
+  }
+
+  &__number {
+    font-family: Avenir Next;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    margin-right: 10px;
+  }
+
+  &__title {
+    font-family: Avenir Next;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 72px;
+    letter-spacing: -0.04em;
+  }
+
+  &__descr {
+    transition: all .3s;
+  }
+
+}
